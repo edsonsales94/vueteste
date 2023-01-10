@@ -7,7 +7,7 @@
             <div class="menu-item">
                 <router-link class="text-nav" to="/product">Produtos</router-link>
                 <router-link class="text-nav" to="/client">Clientes</router-link>
-                <router-link class="text-nav" to="/about">Cli x Prod</router-link>
+                <router-link class="text-nav" to="">Cli x Prod</router-link>
             </div>
         </nav>
     </div>

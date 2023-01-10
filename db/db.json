@@ -6,19 +6,10 @@
       "id": 1
     },
     {
-      "nome": "casa",
-      "ativo": true,
-      "id": 2
-    },
-    {
-      "nome": "chinelo",
-      "ativo": true,
-      "id": 3
-    },
-    {
-      "nome": "acucar",
+      "nome": "eeee",
       "ativo": false,
-      "id": 4
+      "id": 2
     }
-  ]
+  ],
+  "client": [ ]
 }

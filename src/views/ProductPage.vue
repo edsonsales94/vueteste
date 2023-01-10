@@ -1,7 +1,7 @@
 <template>
     <form class="container-form">
         <div class="container-input">
-            <label for="name">Nome Cliente: </label>
+            <label for="name">Descricão Produto: </label>
             <input type="text" v-model="name">
         </div>
         <div class="container-input">
@@ -63,7 +63,7 @@ export default {
             } else { 
                 //validar campo vazio
                 e.preventDefault()
-                this.error = 'O campos nome não pode ficar em Vazio!!!'
+                this.error = 'O campo nome não pode ficar em Vazio!!!'
                 setInterval(()=>this.error="" ,5000)
                 
             }
@@ -85,9 +85,14 @@ export default {
     display: flex
     flex-direction: column
     margin-bottom: 20px
+
+.container-input input
+    padding: 3px 0
+    font-size: 36px
 .container-input label, .submit-btn
     text-align: left
     margin-left: 19%
+
     
 label
     font-weight: bold
@@ -144,4 +149,8 @@ input,select
     color: #fff
     font-weight: bold
     font-size: 18px
+@media (max-width: 600px) 
+    .container-input input
+        padding: 3px 0
+        font-size: 20px
 </style>

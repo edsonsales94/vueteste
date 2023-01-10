@@ -1,12 +1,12 @@
 <template>
     <div class="header">
-        <nav class="container">
+        <nav class="container-header">
             <a href="/">
                 <h2 class="logo">SYSTEM :)</h2>
             </a>
             <div class="menu-item">
-                <router-link class="text-nav" to="/">Produtos</router-link>
-                <router-link class="text-nav" to="/about">Clientes</router-link>
+                <router-link class="text-nav" to="/product">Produtos</router-link>
+                <router-link class="text-nav" to="/client">Clientes</router-link>
                 <router-link class="text-nav" to="/about">Cli x Prod</router-link>
             </div>
         </nav>
@@ -42,7 +42,7 @@ export default {
         color: rgb(88, 96, 139)
         font-weight: bold
         padding: auto   
-    .container
+    .container-header
         width: 100%
         display: flex
         align-content: space-between

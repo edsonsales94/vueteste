@@ -1,0 +1,24 @@
+{
+  "product": [
+    {
+      "nome": "sssss",
+      "ativo": false,
+      "id": 1
+    },
+    {
+      "nome": "casa",
+      "ativo": true,
+      "id": 2
+    },
+    {
+      "nome": "chinelo",
+      "ativo": true,
+      "id": 3
+    },
+    {
+      "nome": "acucar",
+      "ativo": false,
+      "id": 4
+    }
+  ]
+}

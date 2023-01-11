@@ -19,11 +19,11 @@
         <div class="container-input">
             <div class="radio">
                 <label for="flag" style="margin-right: 15px;">Ativo</label>
-                <input class="radio-btn" type="radio" id="flag" name="ativo" :value="true">
+                <input class="radio-btn" type="radio" id="flag" name="ativo" v-model="ativo" :value="true">
             </div>
             <div class="radio">
                 <label for="flag">Inativo</label>
-                <input class="radio-btn" type="radio" id="flag" name="ativo" :value="false">
+                <input class="radio-btn" type="radio" id="flag" name="ativo" v-model="ativo"  :value="false">
             </div>
         </div>
         <div class="container-input">
@@ -76,7 +76,7 @@ export default {
                 doc: this.document,
                 phone: this.phone,
                 email: this.email,
-                ativo: false
+                ativo: this.ativo
             }
             const dataJson = JSON.stringify(data)
             console.log(dataJson)

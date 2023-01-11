@@ -9,7 +9,34 @@
       "nome": "eeee",
       "ativo": false,
       "id": 2
+    },
+    {
+      "nome": "casa",
+      "ativo": true,
+      "id": 3
+    },
+    {
+      "nome": "colher",
+      "ativo": false,
+      "id": 4
     }
   ],
-  "client": [ ]
+  "client": [
+    {
+      "name": "edson",
+      "doc": "8888888",
+      "phone": "8888888",
+      "email": "ed@ED.COM",
+      "ativo": false,
+      "id": 1
+    },
+    {
+      "name": "ED",
+      "doc": "8888888",
+      "phone": "88888888",
+      "email": "W@E.COM",
+      "ativo": true,
+      "id": 2
+    }
+  ]
 }

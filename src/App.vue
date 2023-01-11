@@ -1,24 +1,29 @@
 <template>
   <nav-bar />
-    <router-view/>
+  <router-view />
+  <footer-page />
 </template>
 
 
 <script>
 import NavBar from './components/NavBar.vue';
+import FooterPage from './components/FooterPage.vue';
+
 export default {
   components: {
-    NavBar
+    NavBar,
+    FooterPage
   }
 }
 </script>
 
 <style lang="scss">
-    * {
-      margin: 0 auto;
-      padding: 0;
-      
-    }
+* {
+  margin: 0 auto;
+  padding: 0;
+
+}
+
 // #app {
 //   font-family: Avenir, Helvetica, Arial, sans-serif;
 //   -webkit-font-smoothing: antialiased;

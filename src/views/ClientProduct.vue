@@ -32,31 +32,36 @@
             </table>
 
 
-                <table class="content-table">
-                    <thead>
-                        <tr>
-                            <th>Selecine</th>
-                            <th>Codigo</th>
-                            <th>Descrição</th>
-                            <th>Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr v-for="(item, index) in produtos" :key="index">
-                            <td>
-                                <input v-if="item.ativo == true" type="checkbox" name="radio" v-model="arrayproduct"
-                                    :value="item">
-                                <input v-else disabled type="checkbox" name="radio" v-model="arrayproduct" :value="item">
-                            </td>
-                            <td>{{ item.id }}</td>
-                            <td>{{ item.nome }}</td>
-                            <td v-if="item.ativo == true">Ativo</td>
-                            <td v-else>Inativo</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <table class="content-table">
+                <thead>
+                    <tr>
+                        <th>Selecine</th>
+                        <th>Codigo</th>
+                        <th>Descrição</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="(item, index) in produtos" :key="index">
+                        <td>
+                            <input v-if="item.ativo == true" type="checkbox" name="radio" v-model="arrayproduct"
+                                :value="item">
+                            <input v-else disabled type="checkbox" name="radio" v-model="arrayproduct" :value="item">
+                        </td>
+                        <td>{{ item.id }}</td>
+                        <td>{{ item.nome }}</td>
+                        <td v-if="item.ativo == true">Ativo</td>
+                        <td v-else>Inativo</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="container">
+            <div class="container-input">
+                <input class="submit-btn" type="submit" @click.prevent="save" value="Associar produtos ao cliente">
             </div>
-            <button @click.prevent="save">Salvar</button>
+            <!-- <button >Salvar</button> -->
+        </div>
         <!-- {{ clienteObj }}
     {{ arrayproduct }} -->
     </div>
@@ -142,4 +147,27 @@ export default {
 .content-table tbody tr.active-row 
     font-weight: bold
     color: #009879
+.submit-btn
+    width: 400px
+    text-align: center
+    background-color: #222
+    color:#009879
+    font-weight: bold
+    border: 2px solid #222
+    padding: 10px
+    font-size: 22px
+    margin: 20px  0 20px 0
+    cursor: pointer
+    transition: .5s
+
+.submit-btn:hover 
+    background-color: transparent
+    color: #222
+.messege
+    background: green
+    width:  60%
+    text-align: center
+    color: #fff
+    font-weight: bold
+    font-size: 18px
 </style>

@@ -30,6 +30,8 @@ export default {
     a
         text-decoration: none
         color: #fff
+    a:hover
+        color:#009879
     .text-nav 
         color: #fff
         margin: 10px
@@ -39,7 +41,7 @@ export default {
         text-decoration: none
         transition: 0.5s
     .text-nav:hover 
-        color: rgb(88, 96, 139)
+        color: #009879
         font-weight: bold
         padding: auto   
     .container-header

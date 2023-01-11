@@ -86,9 +86,6 @@ export default {
     flex-direction: column
     margin-bottom: 20px
 
-.container-input input
-    padding: 3px 0
-    font-size: 36px
 .container-input label, .submit-btn
     text-align: left
     margin-left: 19%
@@ -99,7 +96,7 @@ label
     margin-bottom: 15px
     color: #222
     padding: 5px 10px
-    border-left: 4px solid #fcba03
+    border-left: 4px solid #009879
     font-size: 22px
 
 input,select
@@ -124,11 +121,11 @@ input,select
 .submit-btn
     text-align: center
     background-color: #222
-    color:#fcba03
+    color:#009879
     font-weight: bold
     border: 2px solid #222
     padding: 10px
-    font-size: 16px
+    font-size: 22px
     margin: 0 auto
     cursor: pointer
     transition: .5s    

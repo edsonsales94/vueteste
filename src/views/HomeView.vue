@@ -84,6 +84,7 @@ export default {
 .card-titulo 
     font-size: 32px
     margin: 15px 0
+    color: #009879
 .card-texto 
     font-size: 12px
     width: 250px
@@ -102,15 +103,15 @@ export default {
 .card-1 .card-footer 
     background-color: #2740d1
 .card-1 .card-local 
-    color: #2740d1
+    color: #000ccc
 .card-2 .card-footer 
    background-color: #d12761
 .card-2 .card-local 
-    color: #d12761
+    color: #000ccc
 .card-3 .card-footer 
     background-color: #00c702
 .card-3 .card-local 
-    color: #00c702
+    color: #000ccc
 .card:hover 
     transform: scale3d(1.1, 1.1, 1)
 

@@ -2,36 +2,43 @@
     <div class="container-home">
         <div class="container">
             <div class="card card-1">
-                <div class="card-header">
-                    <img src="https://images.pexels.com/photos/7203788/pexels-photo-7203788.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        class="card-img" />
-                </div>
-                <div class="card-body">
-                    <h3 class="card-local">Vizualizar</h3>
-                    <h2 class="card-titulo">Produtos</h2>
-                </div>
+                <router-link class="link" to="/listProduct">
+                    <div class="card-header">
+                        <img src="https://images.pexels.com/photos/7203788/pexels-photo-7203788.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="card-img" />
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-local">Vizualizar</h3>
+                        <h2 class="card-titulo">Produtos</h2>
+                    </div>
+                </router-link>
             </div>
             <div class="card card-2">
-                <div class="card-header">
-                    <img src="https://images.pexels.com/photos/5869616/pexels-photo-5869616.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        class="card-img" />
-                </div>
-                <div class="card-body">
-                    <h3 class="card-local">Vizualizar</h3>
-                    <h2 class="card-titulo">Cliente</h2>
-                </div>
+                <router-link class="link" to="/listclient">
+                    <div class="card-header">
+                        <img src="https://images.pexels.com/photos/5869616/pexels-photo-5869616.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            class="card-img" />
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-local">Vizualizar</h3>
+                        <h2 class="card-titulo">Cliente</h2>
+                    </div>
+                </router-link>
             </div>
             <div class="card card-3">
-                <div class="card-header">
-                    <img src="https://images.pexels.com/photos/4464486/pexels-photo-4464486.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        class="card-img" />
-                </div>
-                <div class="card-body">
-                    <h3 class="card-local">Vizualizar</h3>
-                    <h2 class="card-titulo">Associação Cliente x Produto</h2>
-                </div>
+                <router-link class="link" to="/listpageassociation">
+                    <div class="card-header">
+                        <img src="https://images.pexels.com/photos/4464486/pexels-photo-4464486.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="card-img" />
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-local">Vizualizar</h3>
+                        <h2 class="card-titulo">Associação Cliente x Produto</h2>
+                    </div>
+                </router-link>
             </div>
         </div>
+    </div>
 </template>
 <script>
 export default {
@@ -46,6 +53,8 @@ export default {
     display: flex
     justify-content: space-evenly
     flex-wrap: wrap
+.link
+    text-decoration: none
 .card 
     width: 250px
     height: 300px

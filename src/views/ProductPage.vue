@@ -78,7 +78,7 @@ export default {
     max-width: 100%
     margin: 0 auto
     padding: 25px 0
-    background: #F5F5DC
+    
     
 .container-input
     width:80%

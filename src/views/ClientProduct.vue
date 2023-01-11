@@ -99,7 +99,7 @@ export default {
             // return console.log(data,'data')
             //     //requisicao post
             const dataJson = JSON.stringify(data)
-            const req = await fetch("http://localhost:3000/associar", {
+            const req = await fetch("http://localhost:3000/association", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: dataJson
@@ -125,31 +125,20 @@ export default {
     width: 40%
     border-radius: 5px 5px 0 0
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15)
-
 .content-table thead tr 
-    background-color: #009879
+    background-color: #13141f
     color: #ffffff
     text-align: left
     font-weight: bold
-
-
 .content-table th,
 .content-table td 
     padding: 12px 15px
-
-
 .content-table tbody tr 
     border-bottom: 1px solid #dddddd
-
-
 .content-table tbody tr:nth-of-type(even) 
     background-color: #f3f3f3
-
-
 .content-table tbody tr:last-of-type 
     border-bottom: 2px solid #009879
-
-
 .content-table tbody tr.active-row 
     font-weight: bold
     color: #009879

@@ -1,7 +1,7 @@
 {
   "product": [
     {
-      "nome": "sssss",
+      "nome": "sssssffffffffff",
       "ativo": false,
       "id": 1
     },
@@ -45,8 +45,7 @@
       "email": "W@E.COM",
       "ativo": true,
       "id": 2
-    }
-    ,
+    },
     {
       "name": "ED",
       "doc": "8888888",
@@ -54,8 +53,7 @@
       "email": "W@E.COM",
       "ativo": true,
       "id": 2
-    }
-    ,
+    },
     {
       "name": "ED",
       "doc": "8888888",
@@ -63,8 +61,7 @@
       "email": "W@E.COM",
       "ativo": true,
       "id": 2
-    }
-    ,
+    },
     {
       "name": "ED",
       "doc": "8888888",
@@ -72,8 +69,7 @@
       "email": "W@E.COM",
       "ativo": true,
       "id": 2
-    }
-    ,
+    },
     {
       "name": "ED",
       "doc": "8888888",
@@ -99,5 +95,46 @@
       "id": 2
     }
   ],
-  "associar": []
+  "association": [
+    {
+      "clienteObj": {
+        "name": "ED",
+        "doc": "8888888",
+        "phone": "88888888",
+        "email": "W@E.COM",
+        "ativo": true,
+        "id": 2
+      },
+      "arrayproduct": [
+        {
+          "nome": "casa",
+          "ativo": true,
+          "id": 3
+        },{
+          "nome": "casa1",
+          "ativo": true,
+          "id": 5
+        }
+      ],
+      "id": 1
+    },
+    {
+      "clienteObj": {
+        "name": "EDuuuuu",
+        "doc": "88880000000888",
+        "phone": "88888888",
+        "email": "W@E.COM",
+        "ativo": true,
+        "id": 2
+      },
+      "arrayproduct": [
+        {
+          "nome": "casa 2",
+          "ativo": true,
+          "id": 4
+        }
+      ],
+      "id": 1
+    }
+  ]
 }

@@ -87,6 +87,8 @@ export default {
     color: #ffffff
     text-align: left
     font-weight: bold
+td ,th
+    text-align: center !important
 .content-table th,
 .content-table td 
     padding: 12px 15px

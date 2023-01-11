@@ -113,7 +113,8 @@ input,select
     width: 10%
     margin: 0
     padding: 0
-    
+    td ,th
+    text-align: center !important
 .radio label
     border-left: none
     margin: 0

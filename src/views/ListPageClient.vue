@@ -10,6 +10,7 @@
                         <th>Telefone</th>
                         <th>email</th>
                         <th>Status</th>
+                        <th>Acoes</th>
                     </tr>
                 </thead>
                 <tbody class="scroller">
@@ -21,6 +22,10 @@
                         <td>{{ item.email }}</td>
                         <td v-if="item.ativo == true">Ativo</td>
                         <td v-else>Inativo</td>
+                        <td>
+                            <input class="btn" type="submit" value="editar">
+                            <input class="btn" type="submit" value="excluir">
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -67,6 +72,9 @@ export default {
     color: #ffffff
     text-align: left
     font-weight: bold
+
+td ,th
+    text-align: center !important
 .content-table th,
 .content-table td 
     padding: 12px 15px
@@ -79,4 +87,7 @@ export default {
 .content-table tbody tr.active-row 
     font-weight: bold
     color: #009879
+.btn
+    padding: 5px
+    margin: 5px
 </style>

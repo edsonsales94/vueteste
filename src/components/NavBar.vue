@@ -2,12 +2,13 @@
     <div class="header">
         <nav class="container-header">
             <a href="/">
-                <h2 class="logo">SYSTEM :)</h2>
+                <h2 class="logo">SYSTEM</h2>
             </a>
             <div class="menu-item">
+                <router-link class="text-nav" to="/">Inicio</router-link>
                 <router-link class="text-nav" to="/product">Produtos</router-link>
                 <router-link class="text-nav" to="/client">Clientes</router-link>
-                <router-link class="text-nav" to="/cliente_produto">Cli x Prod</router-link>
+                <router-link class="text-nav" to="/cliente_produto">Associar</router-link>
             </div>
         </nav>
     </div>

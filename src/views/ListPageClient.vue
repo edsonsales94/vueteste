@@ -23,7 +23,9 @@
                         <td v-if="item.ativo == true">Ativo</td>
                         <td v-else>Inativo</td>
                         <td>
-                            <input class="btn" type="submit" value="editar">
+                            <router-link to="/client">
+                                <input class="btn" type="submit" value="editar">
+                            </router-link>
                             <input class="btn" type="submit" value="excluir">
                         </td>
                     </tr>

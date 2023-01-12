@@ -3,8 +3,8 @@
         <div class="container-input">
             <label for="name">Nome Cliente: </label>
             <input type="text" v-model="name">
+            <!-- {{ this.clientes }} -->
         </div>
-        {{ this.clientes }}
         <div class="container-input">
             <label for="document">Documento: </label>
             <input type="text" v-model="document">
@@ -24,7 +24,7 @@
             </div>
             <div class="radio">
                 <label for="flag">Inativo</label>
-                <input class="radio-btn" type="radio" id="flag" name="ativo" v-model="ativo"  :value="false">
+                <input class="radio-btn" type="radio" id="flag" name="ativo" v-model="ativo" :value="false">
             </div>
         </div>
         <div class="container-input">
@@ -32,7 +32,7 @@
         </div>
         <div class="container-input">
             <!-- <span class="messege">{{ msg }}</span>-->
-            <span class="error">{{ error }}</span> 
+            <span class="error">{{ error }}</span>
         </div>
     </form>
 </template>
@@ -47,14 +47,15 @@ export default {
             phone: '',
             email: '',
             ativo: false,
-            error: ''
+            error: '',
+            clientes:[]
         }
     },
     methods: {
-        clear(campo){
+        clear(campo) {
             this.error = `O campo ${campo} não pode ficar vaziu!!!`
-            setInterval(()=>this.error="" ,5000)
-        return 
+            setInterval(() => this.error = "", 5000)
+            return
         },
         async cadCliente(e) {
 
@@ -66,10 +67,10 @@ export default {
                 return this.error = this.clear("documento")
             }
             if (this.phone.trim() == '') {
-                return  this.error = this.clear("telefone")
+                return this.error = this.clear("telefone")
             }
             if (this.email.trim() == '') {
-                return this.error = this.clear("email") 
+                return this.error = this.clear("email")
             }
 
             const data = {
@@ -90,20 +91,28 @@ export default {
             const res = await req.json()
             console.log(res)
             this.msg = "Cadastro realizado com sucesso!"
-                // // limpar campos
-                this.name = ""
-                this.ativo = null
-                setInterval(()=>this.msg="" ,3000)
+            // // limpar campos
+            this.name = ""
+            this.ativo = null
+            setInterval(() => this.msg = "", 3000)
             // limpar campos
             this.name = ""
             this.document = ""
             this.phone = ""
             this.email = ""
             this.ativo = null
+        },
+        async UpdateCliente(a) {
+            const req = await fetch('http://localhost:3000/client/')
+            const data = await req.json()
+            this.clientes = data
+            console.log(this.clientes, 'CLIENTES')
         }
+    },
+    mounted() {
+        this.UpdateCliente()
     }
 }
-
 
 </script>
 

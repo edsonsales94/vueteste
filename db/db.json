@@ -1,5 +1,51 @@
 {
-  "product": [ ],
-  "client": [ ],
-  "association": [ ]
+  "product": [
+    {
+      "nome": "garrafa",
+      "ativo": true,
+      "id": 1
+    },
+    {
+      "nome": "panela",
+      "ativo": false,
+      "id": 2
+    },
+    {
+      "nome": "balde",
+      "ativo": true,
+      "id": 3
+    },
+    {
+      "nome": "bacia",
+      "ativo": false,
+      "id": 4
+    }
+  ],
+  "client": [
+    {
+      "name": "jose da silva",
+      "doc": "23456789",
+      "phone": "9876543234567",
+      "email": "eddy@mail.com",
+      "ativo": true,
+      "id": 1
+    },
+    {
+      "name": "pedro araujo",
+      "doc": "45678908",
+      "phone": "56789",
+      "email": "P@PPP.COM",
+      "ativo": true,
+      "id": 2
+    },
+    {
+      "name": "Sebastiao paulo",
+      "doc": "23456789",
+      "phone": "345678909",
+      "email": "tiao@gmail.com",
+      "ativo": false,
+      "id": 3
+    }
+  ],
+  "association": []
 }

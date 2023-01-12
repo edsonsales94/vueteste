@@ -24,7 +24,7 @@
                         <td v-else>Inativo</td>
                         <td>
                             <router-link to="/client">
-                                <input class="btn" type="submit" value="editar">
+                                <input class="btn" type="submit" value="editar" @click="UpdateCliente">
                             </router-link>
                             <input class="btn" type="submit" value="excluir">
                         </td>

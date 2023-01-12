@@ -9,6 +9,15 @@ npm install
 ```
 npm run serve
 ```
+### Abrir um novo terminal e rodar o comando para instalar um sever api:
+```
+npm install -g json-server
+```
+
+### Apos instalar dentro da pasta do projeto em um terminal rodar o comando:
+```
+npm run api
+```
 
 ### Compiles and minifies for production
 ```

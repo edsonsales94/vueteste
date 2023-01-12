@@ -3,7 +3,7 @@
     <footer class="site-footer">
         <div class="container">
             <div class="container-footer">
-                <div class="col-xs-6 col-md-6">
+                <div>
                     <h6>Brasil</h6>
                     <ul class="footer-links">
                         <li><a href="#">Manaus-AM</a></li>
@@ -11,7 +11,7 @@
                     </ul>
                 </div> 
 
-                <div class="col-xs-6 col-md-3">
+                <div>
                     <h6>Auxiliar</h6>
                     <ul class="footer-links">
                         <li><a href="#">Ferramenta</a></li>
@@ -20,7 +20,7 @@
                     </ul>
                 </div>
 
-                <div class="col-xs-6 col-md-3">
+                <div>
                     <h6>Segue</h6>
                     <ul class="footer-links">
                         <li><a href="#">Sobre</a></li>
@@ -33,8 +33,8 @@
             <hr>
         </div>
         <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-sm-6 col-xs-12">
+            <div>
+                <div>
                     <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
                         <a href="#">SalesSystem</a>.
                     </p>
@@ -84,9 +84,9 @@ export default {
     text-decoration: none
 .footer-links
     padding-left: 0
-    list-style: non
+    list-style: none
 .footer-links li 
-    display: bloc
+    display: block
 .footer-links a 
     color: #737373
 .footer-links a:active
@@ -95,7 +95,7 @@ export default {
     color: #3366cc
     text-decoration: none
 .footer-links.inline li 
-    display: inline-bloc
+    display: inline-block
 .site-footer .social-icons 
     text-align: righ
 .site-footer .social-icons a 
@@ -111,27 +111,27 @@ export default {
 
 @media (max-width:991px) 
     .site-footer [class^=col-] 
-        margin-bottom: 30p
+        margin-bottom: 30px
 
 @media (max-width:767px) 
 .site-footer 
     padding-bottom:0
 .site-footer .copyright-text
 .site-footer .social-icons 
-    text-align: cente
+    text-align: center
 .social-icons 
     padding-left: 0
     margin-bottom: 0
-    list-style: non
+    list-style: none
 .social-icons li
     display: inline-block
-    margin-bottom: 4p
+    margin-bottom: 4px
 .social-icons li.title 
     margin-right: 15px
     text-transform: uppercase
     color: #96a2b2
     font-weight: 700
-    font-size: 13p
+    font-size: 13px
 .social-icons a 
     background-color: #eceeef
     color: #818a91
@@ -155,7 +155,7 @@ export default {
     line-height: 34px
     height: 34px
     width: 34px
-    font-size: 14p
+    font-size: 14px
 .social-icons a.facebook:hover 
     background-color: #3b5998
 .social-icons a.twitter:hover 

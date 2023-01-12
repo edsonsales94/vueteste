@@ -1,46 +1,59 @@
 <template>
     <div class="container-main">
         <div class="container">
-            <table class="content-table">
+            <table class="content-table ">
                 <thead>
                     <tr>
                         <th>Codigo</th>
-                        <th>Descrição</th>
+                        <th>Nome</th>
+                        <th>Documento</th>
+                        <th>Telefone</th>
+                        <th>email</th>
                         <th>Status</th>
+                        <th>Acoes</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr v-for="(item, index) in produtos" :key="index">
+                <tbody class="scroller">
+                    <tr v-for="(item, index) in clientes" :key="index">
                         <td>{{ item.id }}</td>
-                        <td>{{ item.nome }}</td>
+                        <td> {{ item.name }}</td>
+                        <td>{{ item.doc }}</td>
+                        <td>{{ item.phone }}</td>
+                        <td>{{ item.email }}</td>
                         <td v-if="item.ativo == true">Ativo</td>
                         <td v-else>Inativo</td>
+                        <td>
+                            <router-link to="/client">
+                                <input class="btn" type="submit" value="editar">
+                            </router-link>
+                            <input class="btn" type="submit" value="excluir">
+                        </td>
                     </tr>
                 </tbody>
             </table>
         </div>
-        <!-- <button @click.prevent="save">Salvar</button> -->
     </div>
 </template>
 
 <script>
+
 export default {
-    name: "listpageprod",
+    name: "listpageclient",
     data() {
         return {
-            produtos: [],
+            clientes: [],
         }
     },
     methods: {
-        async getProduto() {
-            const req = await fetch('http://localhost:3000/product')
+        async getCliente() {
+            const req = await fetch('http://localhost:3000/client')
             const data = await req.json()
-            this.produtos = data
-            console.log(this.produtos, 'PRODUTOS')
-        },
+            this.clientes = data
+            console.log(this.clientes, 'CLIENTES')
+        }
     },
     mounted() {
-        this.getProduto()
+        this.getCliente()
     }
 }
 
@@ -62,25 +75,22 @@ export default {
     color: #ffffff
     text-align: left
     font-weight: bold
+
+td ,th
+    text-align: center !important
 .content-table th,
 .content-table td 
     padding: 12px 15px
-    
-td ,th
-    text-align: center !important
 .content-table tbody tr 
     border-bottom: 1px solid #dddddd
-
-
 .content-table tbody tr:nth-of-type(even) 
     background-color: #f3f3f3
-
-
 .content-table tbody tr:last-of-type 
     border-bottom: 2px solid #009879
-
-
 .content-table tbody tr.active-row 
     font-weight: bold
     color: #009879
+.btn
+    padding: 5px
+    margin: 5px
 </style>
